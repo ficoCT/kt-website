@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+  
+header {
+    background-image: url("images/background.png");
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none; 
+    margin-right: 1rem;
+}
+
+img {
+    width: 15rem;
+
+}
+
+.bg {
+    background-image: url("images/bg-grid.png");
+}
+
+.flexRow {
+    display: flex;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.buttonArticle {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
