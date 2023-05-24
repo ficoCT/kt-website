@@ -12,3 +12,8 @@ function changeBackgroundImage() {
 }
 
 setInterval(changeBackgroundImage, 3000); 
+
+const hamburger = document.getElementsByClassName("hamburger");
+hamburger[0].addEventListener('click', () => {
+  hamburger[0].classList.toggle("active");
+});
