@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: large;
   }
   
 .container {
@@ -11,9 +12,14 @@
 
 header {
     height: 100vh;
+    padding-top: 2rem;
     background-image: url("images/background.png");
     background-size: cover;
     transition: background-image 0.5s ease-in-out;
+}
+
+.headerContainer {
+    height: 100%;
 }
 
 footer {
@@ -28,7 +34,8 @@ ul {
 
 a {
     text-decoration: none; 
-    margin-right: 1rem;
+    margin-right: 1.3rem;
+    color: black;
 }
 
 img {
@@ -43,6 +50,7 @@ article {
 
 .bg {
     background-image: url("images/bg-grid.png");
+    background-repeat: no-repeat;
 }
 
 .flexRow {
@@ -62,6 +70,14 @@ article {
     justify-content: space-between;
 }
 
+.center {
+    justify-content: center;
+}
+
+.popit {
+    margin-top: 20%;
+}
+
 .name {
     font-size: 5rem;
     font-weight: bold;
@@ -70,11 +86,12 @@ article {
 
 .name--text {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+    color: white;
 }
 
 .button {
-    background-color: #4CAF50; 
+    background-color: #00FFFF; 
     width: 8rem;
     border: none;
     color: white;
