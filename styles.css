@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: large;
+    font-size: x-large;
   }
   
 .container {
@@ -19,7 +19,7 @@ header {
 }
 
 .headerContainer {
-    height: 100%;
+    min-height: 100vh;
 }
 
 footer {
@@ -43,13 +43,14 @@ img {
 }
 
 article {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
 .bg {
     background-image: url("images/bg-grid.png");
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -70,6 +71,11 @@ article {
     justify-content: space-between;
 }
 
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
 .center {
     justify-content: center;
 }
@@ -79,9 +85,10 @@ article {
 }
 
 .name {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: bold;
     color: white;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .name--text {
@@ -94,7 +101,7 @@ article {
     background-color: #00FFFF; 
     width: 8rem;
     border: none;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -110,6 +117,7 @@ article {
     text-align: center;
     font-weight: bold;
     margin-bottom: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .textCenter {
@@ -125,10 +133,14 @@ article {
 
 .textRules {
     width: 40%;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
 }
 
 .buttonArticle {
     background-color: #4CAF50; 
+    margin: auto;
+    width: 140px;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -154,6 +166,11 @@ footer a {
     height: 3px;
     transition: all 0.3s ease;
     background-color: black;
+}
+
+.images-item {
+    margin: 2rem;
+    justify-items: center;
 }
 
 @media (max-width: 767px) {
@@ -191,7 +208,13 @@ footer a {
     }
     
     .nav-menu.active {
-        left: -40%;
+        left: -30%;
     }
+
+    .imagesMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
