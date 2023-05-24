@@ -14,6 +14,8 @@ function changeBackgroundImage() {
 setInterval(changeBackgroundImage, 3000); 
 
 const hamburger = document.getElementsByClassName("hamburger");
+const nav = document.getElementsByClassName("nav-menu");
 hamburger[0].addEventListener('click', () => {
   hamburger[0].classList.toggle("active");
+  nav[0].classList.toggle("active");
 });
