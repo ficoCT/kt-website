@@ -11,7 +11,7 @@
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 2rem;
     background-image: url("images/background.png");
     background-size: cover;
@@ -40,6 +40,10 @@ a {
 
 img {
     width: 15rem;
+}
+
+.imageRules {
+    width: 20rem;
 }
 
 article {
@@ -99,6 +103,7 @@ article {
 
 .button {
     background-color: #00FFFF; 
+    margin-bottom: 2rem;
     width: 8rem;
     border: none;
     color: black;
@@ -132,7 +137,7 @@ article {
 }
 
 .textRules {
-    width: 40%;
+    width: 350px;
     margin-bottom: 2rem;
     font-size: 1.3rem;
 }
